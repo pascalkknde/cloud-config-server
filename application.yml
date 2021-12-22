@@ -1,0 +1,21 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+
+
+
+microservice:
+  party-service:
+    endpoints:
+      endpoint:
+        uri: http://PARTY-SERVICE/party/create
+
+  person-service:
+    endpoints:
+      endpoint:
+        uri: http://PERSON-SERVICE/person/create
