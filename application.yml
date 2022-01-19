@@ -19,3 +19,12 @@ microservice:
     endpoints:
       endpoint:
         uri: http://PERSON-SERVICE/person/create
+  account-service:
+    endpoints:
+      endpoint:
+        uri: http://ACCOUNT-SERVICE/account/create
+
+  customer-service:
+    endpoints:
+      endpoint:
+        uri: http://CUSTOMER-SERVICE/customer/create
